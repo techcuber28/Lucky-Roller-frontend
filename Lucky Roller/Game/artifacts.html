@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Roller Artifacts</title>
+    <link rel="stylesheet" href="/Game/CSS/artifacts.css">
+</head>
+
+<body>
+
+    <button class="cool-button reset-button" onclick="resetShards()">Reset Progress</button>
+    <a href="luckyRoller.html" class="cool-button back-button">Back to Roller</a>
+
+    <h1>Your Artifacts</h1>
+
+    <div class="artifact-container">
+
+        <!-- Hotdog -->
+        <div class="artifact-card">
+            <img id="hotdogImage"
+                src="/Assests/hotDog.png">
+            <h2>Hotdog</h2>
+            <p class="rarity" data-rarity="common">Common Artifact</p>
+            <div class="progress-text" id="hotdogProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="hotdogProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Cookie -->
+        <div class="artifact-card">
+            <img id="cookieImage"
+                src="/Assests/cookie.webp">
+            <h2>Cookie</h2>
+            <p class="rarity" data-rarity="common">Common Artifact</p>
+            <div class="progress-text" id="cookieProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="cookieProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="artifact-card">
+            <img id="burgerImage"
+                src="/Assests/burger.jpg">
+            <h2>Burger</h2>
+            <p class="rarity" data-rarity="common">Common Artifact</p>
+            <div class="progress-text" id="burgerProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="burgerProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Curry -->
+        <div class="artifact-card">
+            <img id="curryImage"
+                src="/Assests/curry.jpg">
+            <h2>Curry</h2>
+            <p class="rarity" data-rarity="uncommon">Uncommon Artifact</p>
+            <div class="progress-text" id="curryProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="curryProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- The Moon -->
+        <div class="artifact-card">
+            <img id="moonImage"
+                src="/Assests/moon.webp">
+            <h2>The Moon</h2>
+            <p class="rarity" data-rarity="uncommon">Uncommon Artifact</p>
+            <div class="progress-text" id="moonProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="moonProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Earth -->
+        <div class="artifact-card">
+            <img id="earthImage"
+                src="/Assests/earth.jpg">
+            <h2>Earth</h2>
+            <p class="rarity" data-rarity="rare">Rare Artifact</p>
+            <div class="progress-text" id="earthProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="earthProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- The Sun -->
+        <div class="artifact-card">
+            <img id="sunImage" src="/Assests/sun.webp">
+            <h2>The Sun</h2>
+            <p class="rarity" data-rarity="epic">Epic Artifact</p>
+            <div class="progress-text" id="sunProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="sunProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Neutron Star -->
+        <div class="artifact-card">
+            <img id="neutronStarImage" src="/Assests/neutronStar.jpg">
+            <h2>Neutron Star</h2>
+            <p class="rarity" data-rarity="legendary">Legendary Artifact</p>
+            <div class="progress-text" id="neutronStarProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="neutronStarProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- White Dwarf Star -->
+        <div class="artifact-card">
+            <img id="whiteDwarfImage"
+                src="/Assests/whiteDwarfStar.jpg">
+            <h2>White Dwarf Star</h2>
+            <p class="rarity" data-rarity="mythic">Mythic Artifact</p>
+            <div class="progress-text" id="whiteDwarfProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="whiteDwarfProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- SunnyD -->
+        <div class="artifact-card">
+            <img id="sunnydImage" src="/Assests/sunnyD.jpg">
+            <h2>SunnyD</h2>
+            <p class="rarity" data-rarity="unreal">Unreal Artifact</p>
+            <div class="progress-text" id="sunnydProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="sunnydProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Grumpy Cat -->
+        <div class="artifact-card">
+            <img id="grumpyCatImage"
+                src="/Assests/grumpyCat.webp">
+            <h2>Grumpy Cat</h2>
+            <p class="rarity" data-rarity="unreal">Unreal Artifact</p>
+            <div class="progress-text" id="grumpyCatProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="grumpyCatProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Larry -->
+        <div class="artifact-card">
+            <img id="larryImage" src="/Assests/larry.jpeg">
+            <h2>Larry</h2>
+            <p class="rarity" data-rarity="godlike">Godlike Artifact</p>
+            <div class="progress-text" id="larryProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="larryProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Duo -->
+        <div class="artifact-card">
+            <img id="duoImage" src="/Assests/duo.webp">
+            <h2>Duo</h2>
+            <p class="rarity" data-rarity="godlike">Godlike Artifact</p>
+            <div class="progress-text" id="duoProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="duoProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- 1500 Day Duolingo Streak -->
+        <div class="artifact-card">
+            <img id="duoStreakImage" src="/Assests/1500Day.jpg">
+            <h2>1500 Day Duolingo Streak</h2>
+            <p class="rarity" data-rarity="godlike">Godlike Artifact</p>
+            <div class="progress-text" id="duoStreakProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="duoStreakProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- TON 618 -->
+        <div class="artifact-card">
+            <img id="ton618Image" src="/Assests/ton618.png">
+            <h2>TON 618</h2>
+            <p class="rarity" data-rarity="alchemy">Alchemy Artifact</p>
+            <div class="progress-text" id="ton618ProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="ton618ProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Phoenix A -->
+        <div class="artifact-card">
+            <img id="phoenixAImage"
+                src="/Assests/phoenixA.webp">
+            <h2>Phoenix A</h2>
+            <p class="rarity" data-rarity="cosmic">Cosmic Artifact</p>
+            <div class="progress-text" id="phoenixAProgressText"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="phoenixAProgressFill"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/Game/JS/artifacts.js"></script>
+
+</body>
+
+</html>

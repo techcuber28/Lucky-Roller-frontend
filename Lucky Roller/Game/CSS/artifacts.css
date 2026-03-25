@@ -1,0 +1,191 @@
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+        }
+
+        .back-button,
+        .reset-button {
+            position: fixed;
+            top: 20px;
+            z-index: 1000;
+        }
+
+        .back-button {
+            right: 20px;
+        }
+
+        .reset-button {
+            left: 20px;
+        }
+
+        .cool-button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cool-button:hover {
+            background: linear-gradient(45deg, #5c0cad 0%, #1e64d8 100%);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .artifact-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 60px auto;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+
+        .artifact-card {
+            background: #111;
+            border-radius: 16px;
+            padding: 25px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 380px;
+        }
+
+        .artifact-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.4s ease;
+            margin: 0 auto;
+        }
+
+        .artifact-card img.unlocked {
+            filter: grayscale(0%);
+        }
+
+        .rarity {
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .rarity[data-rarity="common"] {
+            color: gray;
+        }
+
+        .rarity[data-rarity="uncommon"] {
+            color: green;
+        }
+
+        .rarity[data-rarity="rare"] {
+            color: blue;
+        }
+
+        .rarity[data-rarity="epic"] {
+            color: purple;
+        }
+
+        .rarity[data-rarity="legendary"] {
+            color: goldenrod;
+        }
+
+        .rarity[data-rarity="mythic"] {
+            color: red;
+        }
+
+        .rarity[data-rarity="unreal"] {
+            color: white;
+        }
+
+        .rarity[data-rarity="godlike"] {
+            color: #e0f7ff;
+            animation: godlikeGlow 3s infinite alternate;
+        }
+
+        .rarity[data-rarity="alchemy"] {
+            color: #c8facc;
+            animation: alchemyGlow 2s infinite alternate;
+            text-shadow: 0 0 15px #43c653;
+        }
+
+        .rarity[data-rarity="cosmic"] {
+            color: #ff9500;
+            animation: cosmicGlow 2.5s infinite alternate;
+            text-shadow: 0 0 20px #ffaa00;
+        }
+
+        @keyframes godlikeGlow {
+            0% {
+                color: #e0f7ff;
+                text-shadow: 0 0 10px #e0f7ff;
+            }
+
+            100% {
+                color: #1565c0;
+                text-shadow: 0 0 35px #1565c0;
+            }
+        }
+
+        @keyframes alchemyGlow {
+            0% {
+                color: #c8facc;
+                text-shadow: 0 0 10px #c8facc;
+            }
+
+            100% {
+                color: #1f7a30;
+                text-shadow: 0 0 35px #1f7a30;
+            }
+        }
+
+        @keyframes cosmicGlow {
+            0% {
+                color: #ff9500;
+                text-shadow: 0 0 15px #ff9500;
+            }
+
+            50% {
+                color: #ffc300;
+                text-shadow: 0 0 25px #ffc300;
+            }
+
+            100% {
+                color: #ff6b00;
+                text-shadow: 0 0 35px #ff6b00;
+            }
+        }
+
+        .progress-text {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .progress-bar {
+            background: #333;
+            border-radius: 10px;
+            height: 14px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            height: 100%;
+            width: 0%;
+            transition: width 0.4s ease;
+        }
