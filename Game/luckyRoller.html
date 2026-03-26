@@ -18,8 +18,8 @@
             let name = prompt("Access granted! Let us know your name. This is a one-time prompt.");
             localStorage.setItem("luckyRollerName", name);
             localStorage.setItem("luckyRollerAccess", true);
+            alert("Welcome, " + localStorage.getItem("luckyRollerName"));
         }
-        alert("Welcome, " + localStorage.getItem("luckyRollerName"));
     </script>
 </head>
 
