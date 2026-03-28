@@ -388,7 +388,7 @@ function updateChestButtons() {
 // Load everything
 window.addEventListener("load", () => {
     const claimButton = document.getElementById("claimButton");
-    const lastClaimTime = parseInt(localStorage.getItem("lastSunnyDClaimTime")) || 0;
+    const lastClaimTime = parseInt(localStorage.getItem("lastLimitedTimeClaimTime")) || 0;
     const now = Date.now();
 
     if (now - lastClaimTime < 24 * 60 * 60 * 1000) {
