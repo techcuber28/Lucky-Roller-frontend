@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Roller Changelog</title>
+    <link rel="icon" type="image/png" href="/Assests/Images/signuplogingBG.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 20px;
+            margin-right: 250px;
+        }
+
+        .cool-button {
+            display: inline-block;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cool-button:hover {
+            background: linear-gradient(45deg, #5c0cad 0%, #1e64d8 100%);
+            transform: translateY(-2px);
+        }
+
+        .cool-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .cool-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .key {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 200px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 12px;
+        }
+
+        .key h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .key p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="cool-button" onclick="window.location.href='/Game/luckyRoller.html'">Back to Roller</button>
+    <div class="key">
+        <h3>Key:</h3>
+        <p>ℹ️ = Informational note</p>
+        <p>⭕ = Change is planned for a future update</p>
+        <p>🔴 = The item/feature was removed</p>
+        <p>🟡 = The item/feature was changed/fixed</p>
+        <p>🟢 = The item/feature was added</p>
+        <p>Ⓜ️ = MAJOR UPDATE</p>
+    </div>
+    <h2>Lucky Roller Changelog</h2>
+    <hr>
+    <h3>[4/2/2026]<br>V1.0.0 (BETA stage over, new features.)</h3>
+    <ul>
+        <li>🟢 Added the vault, a place to redeem promo codes and do other stuff in the future.</li>
+        <li>🟢 Added settings, only one for now</li>
+        <li>🟢 Added secret B2 bomber artifact</li>
+        <li>🟢 Luck potions are here! Buy them in the shop.</li>
+        <li>🟢 Added amulets (🧿), a rare currency that can be found secretly. For now, there is only one source to find the amulet.</li>
+        <li>🟢 There are currently 3 promo codes, and there definetly is not a code called "awasteoftime"</li>
+        <li>🟢 Added a page icon, I probably should have done this earlier...</li>
+        <li>🟡 Misc bugfixes</li>
+    </ul>
+    <hr>
+    <h3>[3/25/2026]<br>BETA 9 (New limited time event)</h3>
+    <ul>
+        <li>🟢 A new limited-time event has been added!</li>
+        <li>🟢 Game files are super organized now!</li>
+        <li>🟡 Images for artifacts are now stored in files so they don't act up when the online image disappears or something.</li>
+        <li>ℹ️ Update after being inactive for over a month!!!</li>
+    </ul>
+    <hr>
+    <h3>[2/11/2026]<br>BETA 8 (Drop chances show on roll)</h3>
+    <ul>
+        <li>🟢 The odds of getting your roll are now displayed after rolling.</li>
+    </ul>
+    <hr>
+    <h3>[2/10/2026]<br>BETA 7 (Roll result edit)</h3>
+    <ul>
+        <li>🟡 Removed a message from the roll result</li>
+        <li>ℹ️ Idk why I made 3 super small updates in one day.</li>
+    </ul>
+    <hr>
+    <h3>[2/10/2026]<br>BETA 6 (Fixed font sizes)</h3>
+    <ul>
+        <li>🟡 Font sizes were kinda too big</li>
+        <li>ℹ️ Another super important update fr.</li>
+    </ul>
+    <hr>
+    <h3>[2/10/2026]<br>BETA 5 (Fixed the footer)</h3>
+    <ul>
+        <li>🟡 The footer now displays correctly no matter the device screen size.</li>
+        <li>ℹ️ Super important update ikr.</li>
+    </ul>
+    <hr>
+    <h3>[2/10/2026]<br>BETA 4 (Chests and daily claims)</h3>
+    <ul>
+        <li>🟢 Free chests are avaliable. (An ok one every 10 minutes, a decent one every 4 hours, and a good one every
+            24 hours)</li>
+        <li>🟢 If events are active, you can get free claims related to it.</li>
+        <li>🟡 Adjusted some UI elements to be less ugly.</li>
+    </ul>
+    <hr>
+    <h3>[2/9/2026]<br>BETA 3 (Lucky Roller is now deployed via Netlify!)</h3>
+    <ul>
+        <li>Ⓜ️ Lucky Roller is now deployed via Netlify!</li>
+        <li>Ⓜ️ Added cosmic (1 in 100,000) and abyssal (1 in 1,000,000) rarities</li>
+        <li>🟢 Added a failsafe redirect for repository</li>
+        <li>🟡 Small bug fixes</li>
+    </ul>
+    <hr>
+    <h3>[2/6/2026]<br>ALPHA 2 (Artifacts and shop now exist)</h3>
+    <ul>
+        <li>🟢 Added artifacts. Shards can be collected from roles depending on rarity.</li>
+        <li>🟢 Added the shop, where you can trade credits. (More stuff will come to the shop later on)</li>
+        <li>ℹ️ Artifacts are pretty much just for bragging rights for now.</li>
+    </ul>
+    <hr>
+    <h3>[2/3/2026]<br>ALPHA 1 (Roller code)</h3>
+    <ul>
+        <li>🟢 Added the roller code, which is the core of the game.</li>
+        <li>ℹ️ Game is pretty much non-functional lol.</li>
+    </ul>
+    <hr>
+    <div style="margin-top: 4000px;"></div>
+
+    <!--Easter egg picture-->
+    <h4>"hi" -Techcuber</h4>
+    <img width="25%" src="/Assests/easterEgg.jpg">
+</body>
+
+</html>

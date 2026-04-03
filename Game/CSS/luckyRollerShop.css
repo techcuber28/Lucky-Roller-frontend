@@ -1,0 +1,86 @@
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 30px;
+            font-size: 36px;
+        }
+
+        .credits-display {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .shop-container {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .trade-card {
+            background: #111;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+            border: 1px solid #444;
+        }
+
+        .trade-card h3 {
+            margin: 0 0 15px;
+            font-size: 24px;
+        }
+
+        .trade-card p {
+            margin: 10px 0 20px;
+            font-size: 18px;
+        }
+
+        .cool-button {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cool-button:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(45deg, #5c0cad 0%, #1e64d8 100%);
+        }
+
+        .cool-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .success-msg {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #00ff88;
+            min-height: 24px;
+        }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Roller Vault</title>
+    <link rel="icon" type="image/png" href="/Assests/Images/signuplogingBG.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .cool-button {
+            display: inline-block;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cool-button:hover {
+            background: linear-gradient(45deg, #5c0cad 0%, #1e64d8 100%);
+            transform: translateY(-2px);
+        }
+
+        .cool-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .cool-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+            .back-button {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                z-index: 1000;
+            }
+    </style>
+</head>
+<body>
+    <script src="JS/theVault.js"></script>
+    <h1 style="text-align: center;">The Lucky Roller Vault</h1>
+    <br><br>
+    <h2 style="text-align: center;">🎁 Redeem Promo Codes 💻</h2>
+    <button class="cool-button" style="display: block; margin: 20px auto;" onclick="redeemCode()">Redeem a Promo Code</button>
+        <a href="luckyRoller.html" class="cool-button back-button">Back to Lucky Roller</a>
+</body>
+</html>

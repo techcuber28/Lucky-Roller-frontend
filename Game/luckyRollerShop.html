@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Roller Shop</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="/Game/CSS/luckyRollerShop.css">
+    <link rel="icon" type="image/png" href="/Assests/Images/signuplogingBG.jpg">
+</head>
+
+<body>
+
+    <a href="luckyRoller.html" class="cool-button back-button">Back to Roller</a>
+
+    <h1>Lucky Roller Shop 🛒</h1>
+
+    <div class="credits-display" id="creditsDisplay">
+        Loading your credits...
+    </div>
+
+    <div class="shop-container">
+
+        <div class="trade-card">
+            <h3>⚪ Common → 🟢 Uncommon</h3>
+            <p>Trade 10 Common Credits for 1 Uncommon Credit</p>
+            <button class="cool-button" onclick="trade('common', 10, 'uncommon', 1)">Trade Now!</button>
+            <div class="success-msg" id="msg-common"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>🟢 Uncommon → 🔵 Rare</h3>
+            <p>Trade 10 Uncommon Credits for 1 Rare Credit</p>
+            <button class="cool-button" onclick="trade('uncommon', 10, 'rare', 1)">Trade Now!</button>
+            <div class="success-msg" id="msg-uncommon"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>SunnyD Shard</h3>
+            <p>1 SunnyD Shard 🍊🥤(20 Rare Credits)</p>
+            <button class="cool-button" onclick="trade('rare', 20, 'sunnydShards', 1, true)">Trade Now!</button>
+            <div class="success-msg" id="msg-rare"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>2x Luck Potion 🧪 for 10 minutes</h3>
+            <p>Drink a potion that for 10 minutes gives you 2x luck!</p>
+            <p>Cost: 50 Rare Credits 🔵</p>
+            <button class="cool-button" onclick="buyLuckPotion(2, 10, 50, 'rareCredits')">Buy Potion</button>
+            <div class="success-msg" id="msg-potion"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>5x Luck Potion 🧪 for 5 minutes</h3>
+            <p>Drink a potion that for 5 minutes gives you 5x luck!</p>
+            <p>Cost: 100 Rare Credits 🔵</p>
+            <button class="cool-button" onclick="buyLuckPotion(5, 5, 100, 'rareCredits')">Buy Potion</button>
+            <div class="success-msg" id="msg-potion"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>10x Luck Potion 🧪 for 2 minutes</h3>
+            <p>Drink a potion that for 2 minutes gives you 10x luck!</p>
+            <p>Cost: 150 Rare Credits 🔵</p>
+            <button class="cool-button" onclick="buyLuckPotion(10, 2, 150, 'rareCredits')">Buy Potion</button>
+            <div class="success-msg" id="msg-potion"></div>
+        </div>
+
+        <div class="trade-card">
+            <h3>50x Luck Potion 🧪 for 1 minute</h3>
+            <p>Drink a potion that for 1 minute gives you 50x luck!</p>
+            <p>Cost: 1 amulet 🧿</p>
+            <button class="cool-button" onclick="buyLuckPotion(50, 1, 1, 'amulets')">Buy Potion</button>
+            <div class="success-msg" id="msg-potion"></div>
+        </div>
+
+    </div>
+
+    <script src="/Game/JS/luckyRollerShop.js"></script>
+
+</body>
+
+</html>
